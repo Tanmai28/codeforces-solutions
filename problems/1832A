@@ -1,0 +1,14 @@
+def solve():
+    s = input()
+    n = len(s)
+    
+    first_half = s[:n//2]
+    
+    if len(set(first_half)) > 1:
+        print("YES")
+    else:
+        print("NO")
+ 
+t = int(input())
+for _ in range(t):
+    solve()

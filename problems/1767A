@@ -1,0 +1,19 @@
+a=int(input())
+ans=""
+x=set()
+y=set()
+for i in range(a):
+    input()
+    for j in range(3):
+        a,b= map(int,input().split())
+        x.add(a)
+        y.add(b)
+    if(len(x)<=2 and len(y)<=2):
+        ans+="NO\n"
+    else:
+        ans+="Yes\n"
+    
+    x=set()
+    y=set()
+    
+print(ans)
